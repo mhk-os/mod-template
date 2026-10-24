@@ -1,0 +1,52 @@
+# Unity-generated folders (rebuilt from Assets/, Packages/ and ProjectSettings/)
+.utmp/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+*.log
+
+# Built mods (MHK ▸ Modding ▸ Build ... and ModBuildCli write Builds/Mods/<platform>/)
+/[Bb]uild/
+/[Bb]uilds/
+*.unitypackage
+*.unitypackage.meta
+
+# IDE and solution files (Unity regenerates them)
+.vs/
+.idea/
+.vscode/
+.gradle/
+.consulo/
+ExportedObj/
+*.DotSettings.user
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Crash reports
+sysinfo.txt
+mono_crash.*
+
+# Blender backups
+*.blend1
+*.blend1.meta
+
+# OS and tooling
+.DS_Store
+__pycache__/

@@ -1,0 +1,11 @@
+{
+  "name": "org.mhkose.mod.example",
+  "version": "0.1.0",
+  "displayName": "Example Mod",
+  "description": "A mod for Moorhuhn Kart: Open Source Edition.",
+  "unity": "6000.6",
+  "license": "MIT",
+  "author": {
+    "name": "MHK:OSE"
+  }
+}
