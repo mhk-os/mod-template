@@ -11,6 +11,7 @@ the mod repository into the pack. --empty also removes the sample content and le
 first time Unity opens the copy, or close Unity first.
 """
 import argparse
+import glob
 import json
 import os
 import re
@@ -51,16 +52,18 @@ def asset_name(title):
 
 
 def core_pack_ids(project):
-    """Pack ids of the game and its base content, from the SDK's core index next to this project."""
+    """Pack ids of the game, its core and the base mods, from the SDK's core index and reference packages next to this project."""
     manifest = json.load(open(os.path.join(project, "Packages", "manifest.json")))
     sdk = manifest["dependencies"].get("org.mhkose.sdk", "")
     if not sdk.startswith("file:"):
         return set()
-    index = os.path.normpath(os.path.join(project, "Packages", sdk[5:], "CoreIndex", "core-content.json"))
+    root = os.path.normpath(os.path.join(project, "Packages", sdk[5:]))
+    index = os.path.join(root, "CoreIndex", "core-content.json")
     if not os.path.exists(index):
         print(f"note: no core index at {index}, pack id not checked against the game")
         return set()
-    return {p["packId"] for p in json.load(open(index))["packs"]}
+    indexes = [index] + glob.glob(os.path.join(root, "CoreRefs~", "*", "index.json"))
+    return {p["packId"] for path in indexes for p in json.load(open(path))["packs"]}
 
 
 def check(args, project):
