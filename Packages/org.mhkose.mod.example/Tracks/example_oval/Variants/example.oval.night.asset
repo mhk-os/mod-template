@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e125eaaa8243c8b3964fc5ee1a61aa, type: 3}
+  m_Name: example.oval.night
+  m_EditorClassIdentifier: MHK.Runtime::MHK.Modding.TrackOverlayDefinition
+  id: example.oval.night
+  displayName: 'Checker Oval: Night'
+  sourceGame: example
+  icon: {fileID: 0}
+  hidden: 0
+  trackId: example.oval
+  optionId: core.night
+  isDefault: 0
+  scene:
+    asset: {fileID: 102900000, guid: a70d777e667894552ba7246f6a47183d, type: 3}
+    path: Packages/org.mhkose.mod.example/Tracks/example_oval/example_oval.night.unity
+  contentVersion: 1
