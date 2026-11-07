@@ -22,7 +22,11 @@ MonoBehaviour:
   logo: {fileID: 0}
   menuMusic: {fileID: 0}
   uiClick: {fileID: 0}
-  sharedPowerups: []
+  itemBoxLook:
+    model: {fileID: 0}
+    spinSpeed: 0
+    trackHeight: 0
+    scale: 1
   preferredDefaults: 0
   engineLoop: {fileID: 0}
   skidLoop: {fileID: 0}
@@ -39,6 +43,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e80bd9b59ecf549b39cba1912e95b186, type: 2}
   - {fileID: 11400000, guid: e62f75004163e4defbb91af4f9ac91cc, type: 2}
   - {fileID: 11400000, guid: b23ce77379fc8499f91201cd2be55064, type: 2}
+  - {fileID: 11400000, guid: 3d284cbb3a6bb4d8db7e6e9507c4b345, type: 2}
+  - {fileID: 11400000, guid: e262b92c8a1114966ab6e62dede66919, type: 2}
+  - {fileID: 11400000, guid: 45956da16349f4811b8eaf55e91f036f, type: 2}
+  - {fileID: 11400000, guid: 7968a871dc3c5417a9f16cdb31f0f850, type: 2}
+  sdkApi: 0
   sdkVersion: 
   unityVersion: 
   buildTarget: 
+  assetIndex: {fileID: 0}
